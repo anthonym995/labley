@@ -38,7 +38,7 @@ section {
 /* navbar */
 
 .logo {
-    width: 80px;
+    width: 90px;
 }
 .nav-item {
     font-family: montserrat-bold !important;
@@ -105,7 +105,7 @@ section {
 
 @media(max-width: 991px) {
     .logo {
-        width: 70px !important;
+        width: 80px !important;
     }
     .sidebar {
         background-color: rgba(255,255,255,0.15);
@@ -172,6 +172,13 @@ section {
     outline: none;
     border: 0;
 }
+
+.freebtn:hover {
+    background-color: #F56700;
+    color: white;
+}
+
+
 .arrow-back {
     width: 30px;
     margin-left: 26px;
@@ -200,9 +207,16 @@ section {
     background: transparent;
     padding: 6px 0;
 }
+
+.trialbtn:hover {
+    background-color: #F56700;
+}
+
+
 .trialbtn:first-child {
     margin-right: 20px;
 }
+
 .btns-group {
     margin-top: 30px;
 }
@@ -695,6 +709,10 @@ section {
     color: #F56700;
     font-family: poppins-bold;
 }
+.register-btn:hover {
+    background-color: #F56700;
+    color: white;
+}
 
 
 @media (max-width: 768px) {
@@ -767,26 +785,29 @@ section {
 
 .f-text p{
     font-family: montserrat-bold;
-    font-size: 15px;
+    font-size: 14px;
     margin-left: 100px;
 }
 
 .text-info p{
     font-family: montserrat-bold;
-    font-size: 18px;
+    font-size: 15px;
     color: white;
 }
 .f-img img {
-    width: 100px;
+    width: 115px;
 }
 .f-img {
     margin-right: 60px;
 }
 .text-info img {
-    width: 40px;
+    width: 34px;
 }
 
 @media (max-width:991px) {
+    .f-img img {
+        width: 90px;
+    }
     .f-text p {
         margin-left: 0;
     }
@@ -806,7 +827,7 @@ section {
         color: white;
     }
     .f-img img {
-        width: 200px;
+        width: 180px;
     }
     .f-img {
         margin-right: 60px;
@@ -825,7 +846,7 @@ section {
     position: absolute;
     left: 10px;
     bottom: -60px;
-    width: 80px;
+    width: 90px;
     height: 500px;
 }
 
