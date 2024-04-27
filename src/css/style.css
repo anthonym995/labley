@@ -466,6 +466,10 @@ section {
     padding: 8px 0px;
     color: #2B28AA; 
  }
+ 
+ .read:hover {
+    color: white
+ }
 
  @media(max-width: 991px) {
 

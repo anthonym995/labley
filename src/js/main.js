@@ -10,4 +10,19 @@ window.onscroll = function () {
     navbar.classList.remove("scrolled");
   }
 };
- 
+
+
+
+  // scroll reveal
+
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '100px',
+    duration: 800,
+    reset: true
+});
+
+sr.reveal('.sq1', {});
+sr.reveal('.sq2', {});
+sr.reveal('.sq3', {});
+sr.reveal('.sq4', {});
