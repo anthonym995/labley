@@ -14,7 +14,7 @@ window.onscroll = function () {
 const sr = ScrollReveal({
   distance: "100px",
   duration: 1000,
-  reset: false,
+  reset: true,
 });
 
 // banner
