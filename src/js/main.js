@@ -1,4 +1,3 @@
-
 // scrolling active
 var navbar = document.querySelector(".navbar");
 
@@ -11,18 +10,16 @@ window.onscroll = function () {
   }
 };
 
-
-
-  // scroll reveal
-
+// scroll reveal
 const sr = ScrollReveal({
-    origin: 'top',
-    distance: '100px',
-    duration: 800,
-    reset: true
+  distance: "100px",
+  duration: 1000,
+  reset: true,
 });
 
-sr.reveal('.sq1', {});
-sr.reveal('.sq2', {});
-sr.reveal('.sq3', {});
-sr.reveal('.sq4', {});
+sr.reveal(".sq1, .sq3", {
+  origin: "left",
+});
+sr.reveal(".sq2, .sq4", {
+  origin: "right",
+});
