@@ -471,6 +471,31 @@ section {
     color: white
  }
 
+ /* @media(max-width: 767px) {
+    .box {
+        width: 380px;
+        height: 310px;
+        background-color: black;
+    }
+    .square {
+        width: 310px;
+        height: 290px;
+        margin-left: 15px;
+        border-radius: 25px;
+    }
+    .square p {
+        margin-left: 40px;
+        font-size: 12px;
+    }
+     .box .stars img {
+        width: 20px;
+    }
+    .author {
+        width: 80px;~
+        top: -10px;
+        left: 0;
+    }
+ } */
  @media(max-width: 991px) {
 
  }
@@ -720,18 +745,25 @@ section {
 
 
 @media (max-width: 768px) {
+    .frm-row {
+        flex-direction: column;
+    }
     .frm .labelbox {
+        width: 100%;
         display: flex;
         align-items: center;
-        justify-content: end;
+        justify-content: start;
+    }
+    .frm .input-bg {
+        width: 100%
     }
     .frm .inputbox {
-        width: 330px;
+        width: 100%;
         height: 60px;
         background: none;
     }
     .frm input {
-        width: 320px;
+        width: 100%;
         height: 40px;
         padding: 0 12px;
         border-radius: 20px;
