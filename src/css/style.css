@@ -47,28 +47,34 @@ section {
     width: 90px;
 }
 .nav-item {
-    font-family: montserrat-bold !important;
-    line-height: 1;
-    font-size: 16px !important;
     margin-right: 8px;
-    color: white;
-    border: 1px solid transparent;
 }
 .nav-item:last-child {
     margin-right: 0;
 }
-.nav-item:hover {
-    border: 1px solid #F56700;
-    border-radius: 20px;
-}
-.nav-item.active {
-    color: white;
-    border: 1px solid #F56700;
-}
 .nav-link {
     padding: 8px 16px !important;
     color: white;
+    font-family: montserrat-bold !important;
+    line-height: 1;
+    font-size: 16px !important;
+    border: 1px solid transparent;
+    border-radius: 20px;
 }
+.nav-link:hover {
+    border: 1px solid #F56700;
+}
+.nav-link.active {
+    color: white;
+    border: 1px solid #F56700;
+}
+
+/* .nav-link.active {
+    color: white;
+    border: 1px solid #F56700;
+} */
+
+
 .line {
     position: absolute;
     width: 690px;

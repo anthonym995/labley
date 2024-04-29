@@ -10,7 +10,30 @@ window.onscroll = function () {
   }
 };
 
-// scroll reveal
+
+// Set Nav link active
+const links = document.querySelectorAll(".nav-link");
+
+if (links.length) {
+  links.forEach((link) => {
+    link.addEventListener("click", (e) => {
+
+      // to remove the active class which is previously added
+      links.forEach((link) => {
+        link.classList.remove("active");
+        link.removeAttribute("aria-current", "page");
+      });
+
+      // e.preventDefault();
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
+
+    });
+  });
+}
+
+
+// Set Animation using scroll reveal
 const sr = ScrollReveal({
   distance: "100px",
   duration: 1000,
@@ -30,7 +53,6 @@ sr.reveal(".trialbtn", {
 });
 
 // about section
-
 sr.reveal(".about-lebely", {
   origin: "right",
   distance: "80px",
