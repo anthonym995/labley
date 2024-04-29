@@ -23,10 +23,8 @@ if (links.length) {
       });
 
       // e.preventDefault();
-      if (link.href === window.location.href) {
         link.classList.add("active");
         link.setAttribute("aria-current", "page");
-      }
     });
   });
 }
