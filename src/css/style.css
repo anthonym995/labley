@@ -25,7 +25,7 @@
 }
 
 
-@media(min-width: 1400px) {
+@media(min-width: 1800px) {
   .container {
     max-width: 1700px !important;
   }
@@ -43,7 +43,7 @@ section {
 .nav-item {
     font-family: montserrat-bold !important;
     line-height: 1;
-    font-size: 16px;
+    font-size: 16px !important;
     margin-right: 8px;
     color: white;
     border: 1px solid transparent;
@@ -115,7 +115,8 @@ section {
         display: none;
     }
 }
-@media(min-width:1400px) {
+
+@media(min-width:1800px) {
     .logo {
         width: 160px;
     }
@@ -144,7 +145,7 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 500px;
-    height: 100vh;
+    height: auto;
     padding: 150px 0 60px 0 !important;
     text-align: center;
 }
@@ -248,7 +249,7 @@ section {
         height: auto;
     }
 }
-@media(min-width:1400px) {
+@media(min-width:1800px) {
     .banner {
         padding: 230px 0 60px 0 !important;
     }
@@ -374,7 +375,7 @@ section {
     }
 }
 
-@media(min-width:1400px) {
+@media(min-width:1800px) {
     .about-text1 {
         font-size: 24px;
         padding: 10px 22px;
@@ -502,7 +503,7 @@ section {
 @media(min-width:992px) and (max-width:1199px) {
 
 }
-@media(min-width:1400px) {
+@media(min-width:1800px) {
     .client-title {
         font-size: 50px;
     }
@@ -559,7 +560,7 @@ section {
     width: 100%;
  }
 
-@media(min-width:1400px) {
+@media(min-width:1800px) {
     .client-title2 {
         font-size: 50px;
     }
@@ -771,7 +772,7 @@ section {
 }
 
 
-@media (min-width: 1400px) {
+@media (min-width: 1800px) {
     .client-title3 {
         font-size: 50px;
     }
@@ -853,7 +854,7 @@ section {
 }
 
 
-@media(min-width:1400px) {
+@media(min-width:1800px) {
     .f-text p{
         font-size: 20px;
         margin-left: 150px;
@@ -892,7 +893,7 @@ section {
     }
 }
 
-@media(min-width:1400px) {
+@media(min-width:1800px) {
     .barcode {
         position: absolute;
         left: 10px;
