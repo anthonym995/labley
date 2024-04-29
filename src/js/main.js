@@ -23,12 +23,34 @@ if (links.length) {
       });
 
       // e.preventDefault();
-        link.classList.add("active");
-        link.setAttribute("aria-current", "page");
+
+      link.classList.add("active");
+      link.setAttribute("aria-current", "page");
     });
   });
 }
 
+// Set Nav link active  while scroll
+const sections = document.querySelectorAll("section[id]");
+window.addEventListener("scroll", navHighlighter);
+
+function navHighlighter() {
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 130;
+    sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      document
+        .querySelector(".navmenu a[href*=" + sectionId + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".navmenu a[href*=" + sectionId + "]")
+        .classList.remove("active");
+    }
+  });
+}
 
 // Set Animation using scroll reveal
 const sr = ScrollReveal({
