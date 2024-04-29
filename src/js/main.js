@@ -10,14 +10,12 @@ window.onscroll = function () {
   }
 };
 
-
 // Set Nav link active
 const links = document.querySelectorAll(".nav-link");
 
 if (links.length) {
   links.forEach((link) => {
     link.addEventListener("click", (e) => {
-
       // to remove the active class which is previously added
       links.forEach((link) => {
         link.classList.remove("active");
@@ -25,9 +23,10 @@ if (links.length) {
       });
 
       // e.preventDefault();
-      link.classList.add("active");
-      link.setAttribute("aria-current", "page");
-
+      if (link.href === window.location.href) {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+      }
     });
   });
 }
@@ -69,7 +68,6 @@ sr.reveal(".read, .register-text, .info-img", {
   origin: "bottom",
   distance: "80px",
 });
-
 
 // client
 sr.reveal(".sq1, .sq3", {
