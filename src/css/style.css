@@ -35,6 +35,12 @@ section {
     padding: 60px 0;
 }
 
+
+@media (max-width:991px) {
+    section {
+        padding: 50px 0;
+    }
+}
 /* navbar */
 
 .logo {
@@ -89,7 +95,7 @@ section {
 }
 
 .navbar.scrolled .navbar-toggler .navbar-toggler-icon{
-   filter: invert(1);
+   filter: invert(1) !important;
 }
 .navbar.scrolled .sidebar {
     background-color: white;
@@ -472,16 +478,20 @@ section {
     color: white
  }
 
- /* @media(max-width: 767px) {
+ @media(max-width: 767px) {
     .box {
         width: 380px;
-        height: 310px;
-        background-color: black;
+        height: 235px;
+        margin-bottom: 16px;
+        /* background-color: black; */
+    }
+    .box:nth-child(2) {
+        margin-bottom: 0;
     }
     .square {
-        width: 310px;
-        height: 290px;
-        margin-left: 15px;
+        width: 335px;
+        height: 200px;
+        margin-left: 32px;
         border-radius: 25px;
     }
     .square p {
@@ -492,17 +502,13 @@ section {
         width: 20px;
     }
     .author {
-        width: 80px;~
-        top: -10px;
+        width: 80px;
+        top: -5px;
         left: 0;
     }
- } */
- @media(max-width: 991px) {
-
  }
-@media(min-width:992px) and (max-width:1199px) {
 
-}
+
 @media(min-width:1800px) {
     .client-title {
         font-size: 50px;
@@ -535,7 +541,6 @@ section {
         width: 306px; 
         padding: 12px 50px;
     }
-
 }
 
 
@@ -583,7 +588,7 @@ section {
  /*  swiper1 css  */
 .swiper1 {
     top: 0;
-    width: 90%;
+    width: 100%;
     height: auto;
     /* padding: 50px 0;    */
 }
@@ -611,14 +616,16 @@ section {
 .swiper-button-next{
     background: url(../icons/right.png) no-repeat;
     background-position: center;
-    width: 65px;
-    height: 65px;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
 }
 .swiper-button-prev{
     background: url(../icons/left.png) no-repeat;
     background-position: center;
-    width: 65px;
-    height: 65px;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
 }
 .swiper-pagination-bullet  {
     background-color: white;
@@ -633,8 +640,8 @@ section {
 
 /* End of swiper1 */
 .barslide {
-    width: 85%;
-    margin-bottom: 50px;
+    width: 90%;
+    margin-bottom: 40px;
 }
 
 .barslide .col img{
@@ -643,7 +650,17 @@ section {
 }
 
 
+@media (max-width:576px) {
+    .barslide {
+        width:80% !important;
+    }
+}
+
 @media (max-width: 991px) {
+    .barslide {
+        width: 85%;
+        margin-bottom: 35px;
+    }
     .barslide .box2{
         display: none !important;
     }
@@ -655,6 +672,21 @@ section {
 @media (max-width: 1399px) {
     .barslide .box3{
         display: none !important;
+    }
+}
+
+@media (min-width:1800px) {
+    .barslide {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+    .swiper-button-next{
+        width: 65px;
+        height: 65px;
+    }
+    .swiper-button-prev{
+        width: 65px;
+        height: 65px;
     }
 }
 
